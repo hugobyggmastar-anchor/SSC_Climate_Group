@@ -1,0 +1,18 @@
+{
+  "apiVersion": 3,
+  "name": "ssc/catalog",
+  "title": "SSC produktlista",
+  "category": "design",
+  "icon": "layout",
+  "attributes": {
+    "category": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "reusable": true
+  }
+}

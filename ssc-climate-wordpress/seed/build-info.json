@@ -1,0 +1,8 @@
+{
+  "version": "2.1.0",
+  "date": "2026-10-30",
+  "siteVersion": 68,
+  "sourceCommit": "728b0d25f2c332a390c656c080db6bb03394d024",
+  "wordpressTest": "7.1.4",
+  "phpTest": "8.3.33"
+}

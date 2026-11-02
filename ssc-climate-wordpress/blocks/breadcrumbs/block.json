@@ -1,0 +1,18 @@
+{
+  "apiVersion": 3,
+  "name": "ssc/breadcrumbs",
+  "title": "SSC brödsmulor",
+  "category": "design",
+  "icon": "layout",
+  "attributes": {
+    "items": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "reusable": true
+  }
+}

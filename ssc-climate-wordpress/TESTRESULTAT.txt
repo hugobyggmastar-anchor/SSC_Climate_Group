@@ -1,0 +1,37 @@
+VALIDERING AV SSC WORDPRESS 2.1.0 – 30 OKTOBER 2026
+
+Underlag: sajtens källkod vid commit
+728b0d25f2c332a390c656c080db6bb03394d024 (publicerad version 68).
+
+Testmiljö: isolerad riktig WordPress 7.1.4 med PHP 8.3.33 och SQLite,
+körd genom WordPress Playground/PHP-WASM. Ingen ändring har gjorts på
+företagets befintliga WordPress-server.
+
+Godkända kontroller:
+• WordPress känner igen paketet som ett blocktema och aktiverar det.
+• 10 SSC-blocktyper registreras med Block API version 3.
+• 79 innehållsposter från paketet, 6 produktkategorier och 70 bilder importeras.
+• 36 produkter innehåller totalt 62 modellvarianter.
+• Sidhuvud och sidfot importeras som redigerbara malldelar.
+• Innehållet använder separata block, utan iframe eller helsides-HTML-block.
+• Startsida, produktöversikt, kategori, produkt, lösning, kontakt,
+  nyhetsartikel, service/märkesida och kundberättelse ger HTTP 200.
+• Filtrering med El i Värme för lastutrymmen ger HEAT MAX.
+• Produktmetadata kan läsas och sparas via WordPress REST API.
+• Produktblockets förhandsvisning fungerar via blockredigerarens REST-endpoint.
+• Upprepad import skapar inte dubbla produkter och bevarar redigerad sidtext.
+• JavaScript-syntax, blockmetadata, lokala CSS- och fontresurser är kontrollerade.
+
+Bilder har provats med den riktiga medieimporten. Den sista upprepningen av
+innehållstesterna återanvände en mediefixture för att undvika ännu en
+fullständig generering av samma miniatyrbilder.
+
+Återstår på den riktiga installationen:
+• Visuell kontroll av blockredigeraren och mobilvyn med serverns plugins.
+• WordPress/serverns permalänkar, filrättigheter, uploadgräns och HTTPS.
+• OneDrive/serverintegration och eventuellt kontaktformulär ingår inte i testet.
+• Kundernas egna texter och dokument behöver fortfarande fyllas i.
+
+WordPress-versionen 6.6 anges som lägsta temakrav utifrån använda block-API:er;
+körtestet utfördes på 7.1.4. En MySQL/MariaDB-installation på företagets
+webbhotell har inte använts i dessa kontroller.

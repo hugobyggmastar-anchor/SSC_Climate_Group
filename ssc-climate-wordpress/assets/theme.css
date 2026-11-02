@@ -1,0 +1,20 @@
+/* SSC Varumärkesguide · v1. Ändra varumärket här, oberoende av innehåll. */
+@font-face{font-family:Inter;src:url('inter-300.ttf') format('truetype');font-weight:300;font-display:swap}
+@font-face{font-family:Inter;src:url('inter-400.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:Inter;src:url('inter-500.ttf') format('truetype');font-weight:500;font-display:swap}
+@font-face{font-family:Inter;src:url('inter-600.ttf') format('truetype');font-weight:600;font-display:swap}
+@font-face{font-family:Inter;src:url('inter-700.ttf') format('truetype');font-weight:700;font-display:swap}
+:root{
+ --brand-navy:#001e5d;--brand-polar:#000f33;--brand-white:#fff;--brand-arctic:#2bb7ea;--brand-ember:#ff5b2e;--brand-arctic-deep:#0077b6;--brand-steel:#56657f;--brand-mist:#d5dee9;--brand-frost:#eef4fa;
+ --color-text:var(--brand-navy);--color-muted:var(--brand-steel);--color-bg:var(--brand-white);--color-surface:var(--brand-frost);--color-border:var(--brand-mist);--color-dark:var(--brand-polar);--color-action:var(--brand-navy);--color-link:var(--brand-arctic-deep);--color-cold:var(--brand-arctic);--color-warm:var(--brand-ember);
+ --font-body:Inter,Arial,sans-serif;--font-display:Inter,Arial,sans-serif;--radius-card:8px;--radius-button:6px;--width:1280px;--page-gutter:clamp(22px,4.8vw,80px);--section-space:clamp(64px,8vw,120px);--ease:cubic-bezier(0.23,1,0.32,1);--duration:180ms;
+}
+
+/* Gemensam rörelse. CSS och Web Animations API använder samma tokens. */
+:root{--duration:180ms;--duration-press:140ms;--duration-reveal:420ms;--duration-hero:520ms;--duration-stagger:60ms}
+
+/* Neutral bildtoning för startsidans vintermotiv. */
+:root{--color-hero-shade:#20262c;--color-hero-heading:var(--brand-white)}
+
+/* Startsidesmenyn behåller vinterbildens blågrå nyans vid scroll. */
+:root{--color-home-header-start:#3b5374;--color-home-header-end:#47648f}

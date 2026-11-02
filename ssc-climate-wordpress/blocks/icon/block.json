@@ -1,0 +1,18 @@
+{
+  "apiVersion": 3,
+  "name": "ssc/icon",
+  "title": "SSC ikon",
+  "category": "design",
+  "icon": "layout",
+  "attributes": {
+    "svg": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "reusable": true
+  }
+}

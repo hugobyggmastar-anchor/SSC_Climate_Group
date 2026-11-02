@@ -1,0 +1,18 @@
+{
+  "apiVersion": 3,
+  "name": "ssc/product-section",
+  "title": "SSC produktinformation",
+  "category": "design",
+  "icon": "layout",
+  "attributes": {
+    "section": {
+      "type": "string",
+      "default": "hero"
+    }
+  },
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "reusable": true
+  }
+}

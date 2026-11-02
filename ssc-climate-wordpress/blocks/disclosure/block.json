@@ -1,0 +1,26 @@
+{
+  "apiVersion": 3,
+  "name": "ssc/disclosure",
+  "title": "SSC utfällbar sektion",
+  "category": "design",
+  "icon": "layout",
+  "attributes": {
+    "className": {
+      "type": "string",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "default": "Öppna"
+    },
+    "open": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "reusable": true
+  }
+}

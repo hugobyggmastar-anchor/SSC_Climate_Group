@@ -1,0 +1,26 @@
+{
+  "apiVersion": 3,
+  "name": "ssc/table",
+  "title": "SSC tabell",
+  "category": "design",
+  "icon": "layout",
+  "attributes": {
+    "rows": {
+      "type": "array",
+      "default": []
+    },
+    "caption": {
+      "type": "string",
+      "default": ""
+    },
+    "className": {
+      "type": "string",
+      "default": "spec-table"
+    }
+  },
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "reusable": true
+  }
+}

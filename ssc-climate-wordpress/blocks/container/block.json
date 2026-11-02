@@ -1,0 +1,30 @@
+{
+  "apiVersion": 3,
+  "name": "ssc/container",
+  "title": "SSC layout",
+  "category": "design",
+  "icon": "layout",
+  "attributes": {
+    "className": {
+      "type": "string",
+      "default": ""
+    },
+    "style": {
+      "type": "string",
+      "default": ""
+    },
+    "htmlAttrs": {
+      "type": "object",
+      "default": {}
+    },
+    "tag": {
+      "type": "string",
+      "default": "div"
+    }
+  },
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "reusable": true
+  }
+}
